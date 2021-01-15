@@ -34,6 +34,7 @@ test("form shows success message on submit with form details", async () => {
     userEvent.click(button);
 
     //Assert
+    // SHows Success Message test
     const successMessage = await screen.findByTestId(/successMessage/)
     expect(successMessage).toBeInTheDocument();
 
