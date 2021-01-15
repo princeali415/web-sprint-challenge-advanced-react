@@ -12,8 +12,7 @@ test("form header renders", () => {
 test("form shows success message on submit with form details", async () => {
     render (<CheckoutForm />)
 
-     // Act:
-
+    // Act:
     // 1. Get our firstName, lastName, email, and message input feilds.
     const firstNameInput = screen.getByLabelText(/first name/i)
     const lastNameInput = screen.getByLabelText(/last name/i) 
