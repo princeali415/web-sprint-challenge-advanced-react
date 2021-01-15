@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import CheckoutForm from '../components/CheckoutForm'
 
-const useForm = (initialValue) => {
+const useForm = initialValue => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [values, setValues] = useState(initialValue);
 
