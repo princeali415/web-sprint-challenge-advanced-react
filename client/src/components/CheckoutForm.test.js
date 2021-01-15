@@ -38,8 +38,6 @@ test("form shows success message on submit with form details", async () => {
     const successMessage = await screen.findByTestId(/successMessage/)
     expect(successMessage).toBeInTheDocument();
 
-    //Testing to see if text inputs pass test
-    const newFirstNameInput = await screen.findAllByText(/Hussain/i)
-    expect(newFirstNameInput).toBeTruthy()
+    
 
 });

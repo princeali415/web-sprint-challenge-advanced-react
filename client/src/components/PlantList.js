@@ -17,7 +17,7 @@ export default class PlantList extends Component {
       this.setState({
         plants: res.data.plantsData
       })
-      // console.log(res)
+      
     })
     .catch(err => {
       console.log(err)
