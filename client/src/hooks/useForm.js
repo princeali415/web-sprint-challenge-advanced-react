@@ -2,21 +2,17 @@
 import React, { useState } from "react";
 import CheckoutForm from '../components/CheckoutForm'
 
-const useForm = initialValue => {
+const useForm = (intitialValues) => {
+  const [values, setValues] = useState(intitialValues);
 
-    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-    const [values, setValues] = useState(initialValue);
-  
-    const handleChanges = (e) => {
-      setValues({ ...values, [e.target.name]: e.target.value });
-    };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      setShowSuccessMessage(true);
-    };
+  const handleChanges = (e) => {
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-    return [values, showSuccessMessage, handleChanges, handleSubmit]
-}
+  return [values, handleChanges];
+};
 
 export default useForm
