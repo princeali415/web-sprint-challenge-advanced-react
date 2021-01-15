@@ -36,6 +36,7 @@
   "devDependencies": {
     "@sheerun/mutationobserver-shim": "^0.3.3",
     "@testing-library/react": "^10.4.9",
+    "@testing-library/react-hooks": "^5.0.0",
     "msw": "^0.21.3"
   }
 }
